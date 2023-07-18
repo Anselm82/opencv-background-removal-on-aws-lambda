@@ -331,9 +331,9 @@ Resources:
     MaskBucket:
       Type: 'AWS::S3::Bucket'
       Properties:
-        OwnershipControls:
-        Rules:
-          - ObjectOwnership: ObjectWriter
+        OwnershipControls:  
+          Rules:
+            - ObjectOwnership: ObjectWriter
         BucketEncryption:
           ServerSideEncryptionConfiguration:
             - ServerSideEncryptionByDefault:
